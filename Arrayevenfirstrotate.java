@@ -12,6 +12,7 @@ public static void main(String k[])
 
     }
     int count=0;
+    int last=n-1;
     for(int index=0;index<n;index++)
     {
        
@@ -23,6 +24,9 @@ public static void main(String k[])
          count++;
 
        }
+       
+       
+       
        
     }
     for(int index=0;index<n;index++)
