@@ -12,7 +12,7 @@ public static void main(String k[])
 
     }
     int count=0;
-    int last=n-1;
+    int last=0;
     for(int index=0;index<n;index++)
     {
        
@@ -24,7 +24,12 @@ public static void main(String k[])
          count++;
 
        }
-       
+       else
+       {  
+           last=index;
+          array[n-index-1]=array[last];
+          
+       }
        
        
        
