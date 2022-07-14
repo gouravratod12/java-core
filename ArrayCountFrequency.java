@@ -11,24 +11,18 @@ class ArrayCountFrequency {
     {
         array[index]=sc.nextInt();
     }
-    int j,count=0;
+    int number,count=0;
+    number=sc.nextInt();
     for(int index=0;index<n;index++)
     {
-        for(j=0;j<n;j++)
+        if(number==array[index])
         {
-            if(array[index]==array[j] && index!=j)
-            {  
-                count++;
-                array[j]=array[j+1];
-                
-            }
+            count++;
         }
-        if(count==0 )
-        {
-            System.out.println(array[index]+"  "+count);
-        }
-        count=0;
+        
+       
     }
+    System.out.println(number+"="+count);
     
    }
 }
