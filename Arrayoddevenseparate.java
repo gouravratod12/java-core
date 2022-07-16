@@ -34,7 +34,6 @@ class Arrayoddevenseparate {
         System.out.print(even[index]+" ");
         
       }
-      System.out.println("\n");
       for(int index=0;index<ocount;index++)
       {
         System.out.print(odd[index]+" ");
