@@ -9,26 +9,26 @@ class Arrayinsertionsort {
         for(int index=1;index<number;index++)
         {
             temp=array[index];
-            for( j=index-1;j>=0;j--)
+            j=index-1;
+            while(j>=0 && temp>array[j]  )
             {
-                  if(array[j]<=temp)
-                  {
                     array[j+1]=array[j];
-                  }
+                    j=j-1;
                   
-
-            }
-            array[j+1]=temp;
+            }     
+          
+             array[j+1]=temp;
+        
             for(int p=0;p<number;p++)
            {
             System.out.print(array[p]+" ");
             }
          System.out.println("\n");
         }
-        
+    }
      
 
-    }
+    
 
     public static void main(String k[])
     {
@@ -40,11 +40,7 @@ class Arrayinsertionsort {
             array[index]=sc.nextInt();
         }
         insertionsort(array);
-      /*  for(int index=0;index<number;index++)
-        {
-            System.out.print(array[index]+" ");
-        }*/
-
     }
     
 }
+
