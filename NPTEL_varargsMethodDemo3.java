@@ -3,7 +3,7 @@
         static void varargsMethod3(object ...obj)
         {
             //System.out.println("number of arguements " +v.length+" length");
-            for(object o:obj)
+            for(object o: obj)
             {
                 System.out.print(" "+o);
                 System.out.println();
