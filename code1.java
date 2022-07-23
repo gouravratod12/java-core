@@ -13,46 +13,39 @@ class code1
 		int S[]=new int[N];
 		int T[]=new int[N];
 		int index=0;
-		for(index=0;index<N;index++)
-		{
-		    S[index]=sc.nextInt();
-		    T[index]=sc.nextInt();
-		}
 		int L[]=new int[N],max=0,k=0;
 		int W=0;
+	    max=L[0];
 		for(index=0;index<N;index++)
 		{
-		     
-		     if(S[index]>T[index])
-		     {
-		         L[k]=S[index]-T[index];
-		         W++;
-		         k++;
-		     }
-		     else
-		     {
-		         L[k]=T[index]-S[index];
-		         W++;
-		         k++;
-		         
-		     }
+			     S[index]=sc.nextInt();
+		         T[index]=sc.nextInt();
 		    
-		     
-		      
-		}
-		max=L[0];
+		         L[k]=Math.abs(S[index]-T[index]);
+		         k++;
+				
+				   if(L[index]>=max)
+				  {
+					 max=L[index];
+					 if(S[index]>T[index])
+					 {
+						W=1;
+					 }
+					 else
+					 {
+						W=2;
+					 }
+					 
+					 
+				  }
+				  
+				
 		
-		for(index=1;index<N;index++)
-		{
-		   
-		    if(L[index]>max)
-		    {
-		        max=L[index];
-		    }
-		   
-		    
-		}
-		System.out.println((index-W)+" "+max);
+			  
+			   
+	
+			}
+			System.out.print(W+" "+max);
 		
 	}
 }
